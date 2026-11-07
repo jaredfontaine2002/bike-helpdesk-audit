@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gorgias Helpdesk Audit for Bike Shops — Jared Fontaine</title>
+<meta name="description" content="A bike-shop-specific Gorgias helpdesk audit by a Gorgias Admin + CX certified cycling-industry pro. Start with a free Helpdesk Mini-Audit, or the full $595 Audit. Sprint $1,800, Care $700/mo.">
+<meta property="og:title" content="Gorgias Helpdesk Audit for Bike Shops — Jared Fontaine">
+<meta property="og:description" content="Your inbox burns hours on the same five questions. I audit your Gorgias helpdesk and show you where the queue is leaking, starting with a free Mini-Audit.">
+<meta property="og:type" content="website">
+<style>
+:root{--ink:#1a1f16;--muted:#5c6650;--paper:#f7f4ec;--card:#fffdf7;--line:#ddd5c2;--green:#2e5e1e;--green-dark:#1e3d14;--gold:#e8b13a;--gold-ink:#1a1f16;--radius:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:17px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:Georgia,'Times New Roman',serif;line-height:1.15}
+h2{font-size:32px;margin-bottom:12px}
+h3{font-size:20px}
+.section{padding:64px 0}
+.section.alt{background:#fff}
+.section.dark{background:var(--green-dark);color:#f3f1e6}
+.lede{font-size:19px;color:var(--muted);max-width:680px}
+.dark .lede{color:#d8dbc9}
+.eyebrow{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:14px}
+.dark .eyebrow{color:var(--gold)}
+.btn{display:inline-block;font-weight:700;font-size:16px;text-decoration:none;padding:14px 26px;border-radius:10px;text-align:center;transition:transform .08s ease}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--green);color:#fff}
+.btn.gold{background:var(--gold);color:var(--gold-ink)}
+.btn.ghost{background:transparent;color:var(--green);border:2px solid var(--green)}
+.dark .btn.ghost{color:#fff;border-color:#fff}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.micro{font-size:13.5px;color:var(--muted);margin-top:12px}
+.dark .micro{color:#c9cdbb}
+/* sticky top bar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(247,244,236,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(4px)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:10px;padding-bottom:10px}
+.brand{font-family:Georgia,serif;font-weight:700;font-size:18px}
+.brand span{color:var(--green)}
+.topbar .btn{padding:9px 18px;font-size:14.5px}
+/* hero */
+.hero{padding:72px 0 56px}
+.hero h1{font-size:52px;max-width:820px}
+.hero h1 em{color:var(--green);font-style:italic}
+.hero .sub{font-size:20px;color:#39412f;max-width:700px;margin:20px 0 28px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.proof{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.proof span{font-size:13.5px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px}
+.proof b{color:var(--green)}
+/* question chips band */
+.qband{max-width:1080px;margin:0 auto;padding:0 20px 8px}
+.qband .inner{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.qband .label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:700;width:100%}
+.qchip{font-size:15px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px;color:#39412f}
+.qchip b{color:var(--green)}
+/* cards grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.alt .card{background:var(--paper)}
+.card .icon{font-size:26px;display:block;margin-bottom:10px}
+.card p{font-size:15.5px;color:#39412f;margin-top:6px}
+/* mechanism */
+.mech{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:28px}
+.mech .step-num,.steps .step-num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--green);color:#fff;font-weight:800;margin-bottom:12px}
+/* free offer box */
+.snapshot-box{background:var(--green-dark);color:#f3f1e6;border-radius:20px;padding:40px;margin-top:8px}
+.snapshot-box h2{color:#fff}
+.snapshot-box ul{margin:16px 0 24px 20px;font-size:17px}
+.snapshot-box li{margin:7px 0}
+.snapshot-box .micro{color:#c9cdbb}
+.snapshot-box a.playbook{color:var(--gold);font-weight:700}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.steps .card .step-num{background:var(--gold);color:var(--gold-ink)}
+/* ladder */
+.ladder{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:26px 0 6px;font-weight:700}
+.ladder .rung{background:var(--card);border:1.5px solid var(--green);color:var(--green);border-radius:999px;padding:8px 18px;font-size:15px}
+.ladder .arrow{color:var(--muted)}
+/* pricing */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:28px;align-items:stretch}
+.price-card{display:flex;flex-direction:column;position:relative}
+.price-card.hot{border:2.5px solid var(--green);box-shadow:0 14px 34px rgba(30,61,20,.14)}
+.tag{position:absolute;top:-13px;left:20px;background:var(--green);color:#fff;font-size:12.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;border-radius:999px;padding:5px 12px}
+.tag.start{background:var(--gold);color:var(--gold-ink)}
+.price{font-size:38px;font-weight:800;margin:10px 0 2px;font-family:Georgia,serif}
+.per{font-size:13.5px;color:var(--muted)}
+.price-card ul{margin:14px 0 20px 18px;font-size:15.5px}
+.price-card li{margin:6px 0}
+.price-card .btn{margin-top:auto}
+.note{font-size:13px;color:var(--muted);margin-top:10px}
+.note.strong{color:var(--ink);font-size:13.5px}
+/* guarantee */
+.guarantee{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:28px}
+.guarantee ul{margin:10px 0 0 20px}
+.guarantee li{margin:7px 0;font-size:16px}
+.guarantee .yes{border-top:5px solid var(--green)}
+.guarantee .no{border-top:5px solid #b3261e}
+/* demo svg panel */
+.demo-art{display:flex;justify-content:center;margin:26px 0 6px}
+.demo-art svg{max-width:520px;width:100%;height:auto}
+/* about */
+.about{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap}
+.avatar{flex:0 0 92px;width:92px;height:92px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:34px;font-weight:700}
+.about-text{flex:1 1 420px}
+.about-text p{margin:10px 0;color:#39412f}
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:12px 0}
+details summary{font-weight:700;cursor:pointer;font-size:17px}
+details p{margin-top:10px;color:#39412f;font-size:16px}
+/* final cta */
+.final{text-align:center}
+.final h2{font-size:36px;color:#fff}
+.final .cta-row{justify-content:center;margin-top:26px}
+.final .contact{margin-top:22px;font-size:15px}
+.final .contact a{color:var(--gold)}
+/* footer */
+footer{border-top:1px solid var(--line);padding:26px 0 90px;font-size:14px;color:var(--muted)}
+footer a{color:var(--green)}
+/* sticky mobile bar */
+.mobilebar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--green-dark);padding:10px 12px;gap:10px}
+.mobilebar a{flex:1;padding:12px 8px;font-size:15px}
+@media (max-width:720px){
+  .hero{padding:44px 0 40px}
+  .hero h1{font-size:36px}
+  .hero .sub{font-size:18px}
+  .section{padding:44px 0}
+  h2{font-size:27px}
+  .cta-row .btn{flex:1 1 100%}
+  .snapshot-box{padding:28px 22px}
+  .mobilebar{display:flex}
+  footer{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="wrap">
+    <div class="brand">Gorgias Audit <span>for Bike Shops</span></div>
+    <a class="btn gold" href="#free">Get my free Helpdesk Mini-Audit</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">For independent bike shops &amp; small DTC cycling brands · Shopify + Gorgias</div>
+    <h1>Still answering “What size am I?” from your phone at <em>9pm</em>?</h1>
+    <p class="sub">A bike-shop Gorgias audit by a Gorgias Admin + CX certified cycling-industry pro. I read your real tickets, show you where the queue leaks time and money, and hand you the fix list in priority order. Start with the free Mini-Audit, or go straight to the full $595 Audit.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="https://jared-fontaine.kit.com/free-helpdesk-mini-audit-bike-shops">Get my free Helpdesk Mini-Audit</a>
+      <a class="btn ghost" href="https://square.link/u/69Sae1mn">Start with the $595 Audit</a>
+    </div>
+    <p class="micro">First 5 shops free · Back within 3 business days · Anonymised ticket sample only, your helpdesk login stays yours · Secure Square checkout on paid offers</p>
+    <div class="proof" aria-label="Proof points">
+      <span><b>Gorgias Admin + CX</b> certified (2026)</span>
+      <span>Live agent demo: <b>10/10</b> trap tests passed</span>
+      <span>Cycling CX: <b>Planet Cyclery · Cambria Bike · Tune Cycles Australia</b></span>
+      <span><b>Shimano Tech &amp; SRAM TU (Elite)</b> certified</span>
+    </div>
+    <!-- [NEED: testimonial — none exist yet. Add the first paid Audit client's quote here only with their written permission.] -->
+  </div>
+</header>
+
+<div class="qband" aria-label="The five questions that eat the day">
+  <div class="inner">
+    <span class="label">The same five questions, every day</span>
+    <span class="qchip">“What size am I?”</span>
+    <span class="qchip">“Will this part fit my bike?”</span>
+    <span class="qchip">“Where's my order?”</span>
+    <span class="qchip">“When will my bike be ready?”</span>
+    <span class="qchip">“My frame cracked. What now?”</span>
+  </div>
+</div>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="eyebrow">The problem</div>
+    <h2>None of it needs your best mechanic. Every answer has to be right.</h2>
+    <p class="lede">Your inbox burns hours on repeat questions. If you're the owner answering sizing questions from your phone after hours, you're paying for your helpdesk twice: once in software, once in your evenings.</p>
+    <div class="grid">
+      <div class="card"><span class="icon" aria-hidden="true">📏</span><h3>Guessed sizing &amp; compatibility</h3><p>Generic chatbots and untuned helpdesk AI guess a Shimano/SRAM compatibility, sell an out-of-stock size, or promise a delivery date. You pay for the return, the refund, and the lost trust.</p></div>
+      <div class="card"><span class="icon" aria-hidden="true">🧩</span><h3>Macros that don't match real tickets</h3><p>The saved replies were written for the tickets you <em>expected</em>. Your customers send different ones, so staff rewrite from scratch, ticket after ticket.</p></div>
+      <div class="card"><span class="icon" aria-hidden="true">🐢</span><h3>Slow lanes nobody can see</h3><p>Which ticket type waits longest? Which topic breaches your SLA? The pattern data sits unread in your helpdesk because nobody has time to mine it.</p></div>
+      <div class="card"><span class="icon" aria-hidden="true">🔁</span><h3>Patterns read as coincidences</h3><p>The same crack three times in nine days points to a supplier problem. Without a read of the whole queue, it stays buried as three unrelated tickets.</p></div>
+    </div>
+    <p style="margin-top:24px;font-size:19px"><strong>The questions are answerable. The cost is answering them slowly, inconsistently, or after hours.</strong></p>
+  </div>
+</section>
+
+<section class="section" id="free" style="padding-top:8px">
+  <div class="wrap">
+    <div class="snapshot-box">
+      <div class="eyebrow" style="color:var(--gold)">Start free</div>
+      <h2>The free Helpdesk Mini-Audit</h2>
+      <p>Send me an export of a <strong>sample of your anonymised tickets</strong>, with names and emails stripped out. I never log in to your helpdesk. Within <strong>3 business days</strong> you'll get back:</p>
+      <ul>
+        <li>Your <strong>top repeated question types</strong>, with counts</li>
+        <li>Up to <strong>3 macros that don't match</strong> the real tickets they're used on</li>
+        <li>Your <strong>slowest ticket lane</strong></li>
+        <li>One <strong>sizing/compatibility risk flag</strong>, the kind of answer that costs a return when it's wrong</li>
+        <li>A short note on what the <strong>full $595 Audit</strong> would cover beyond this sample</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn gold" href="https://jared-fontaine.kit.com/free-helpdesk-mini-audit-bike-shops">Get my free Helpdesk Mini-Audit</a>
+      </div>
+      <p class="micro">First 5 shops free · A sample read of the tickets you send, not the full 7-day audit · Your tickets are used only to write your report, and every number in it traces back to them</p>
+      <div class="steps" style="margin-top:26px">
+        <div class="card"><span class="step-num">1</span><h3>You export a sample</h3><p>A CSV of recent tickets from your helpdesk, names and emails stripped out. A few hundred tickets across your normal mix shows the patterns best.</p></div>
+        <div class="card"><span class="step-num">2</span><h3>I read the sample</h3><p>Every finding traces to the tickets you sent.</p></div>
+        <div class="card"><span class="step-num">3</span><h3>The report lands</h3><p>Within 3 business days: what repeats, what is slow, and where a wrong answer is costing you, plus a note on what the full Audit adds.</p></div>
+      </div>
+      <!-- [NEED: redacted sample Mini-Audit report — publish an inspectable sample here after the first real delivery, with that shop's written permission.] -->
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="eyebrow">The full audit</div>
+    <h2>What the $595 Audit actually covers</h2>
+    <p class="lede">In one week, I tear down your Gorgias setup and hand you a prioritised fix list: what to change, in what order, and what it's costing you to leave it alone.</p>
+    <div class="mech">
+      <div class="card"><span class="step-num">1</span><h3>Full setup teardown</h3><p>Your whole Gorgias instance: macros, routing rules, views, tags, SLA policies, and AI agent configuration, checked line by line against how tickets really flow.</p></div>
+      <div class="card"><span class="step-num">2</span><h3>Ticket data analysis</h3><p>First response time, resolution time and CSAT broken down by tag, topic and agent, plus SLA breach patterns, analysed in Python. You get charts and a written summary of the findings.</p></div>
+      <div class="card"><span class="step-num">3</span><h3>Prioritised fix list</h3><p>Quick wins vs. structural fixes, ranked by impact on response time and CSAT, plus a recorded walkthrough of the findings and a live Q&amp;A call. The report is yours either way.</p></div>
+    </div>
+    <p class="micro" style="margin-top:18px">What I need: admin or agency access to your Gorgias (or a screenshare walkthrough, if you prefer) and a 3–6 month ticket export. Delivered 7 days from the day I get access.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Where this leads</div>
+    <h2>An agent that answers only from your catalogue</h2>
+    <p class="lede">The audit comes first because automating a broken setup just makes the mistakes faster. Once the fix list exists, the Sprint builds the agent on top of it:</p>
+    <div class="mech">
+      <div class="card"><span class="step-num">1</span><h3>Sizing &amp; compatibility, only from your catalogue</h3><p>The agent asks for inseam before naming a size, checks compatibility against your catalogue and knowledge base, and flags out-of-stock sizes instead of selling them. If a fact isn't in your sources, it says so and drafts the question for your team.</p></div>
+      <div class="card"><span class="step-num">2</span><h3>Order, service &amp; warranty triage</h3><p>Order and workshop status come only from your orders data. Warranty triage collects serial number, purchase proof, photos/video and what happened in one pass. One pass replaces four rounds of “can you send a photo?” It never promises a replacement or a coverage outcome.</p></div>
+      <div class="card"><span class="step-num">3</span><h3>Daily flag report + approval-gated follow-up</h3><p>Every morning you get a plain-English flag report: slowest lanes, happiest and unhappiest topics, repeated patterns, every number tracing to a ticket. Unanswered inquiries get a drafted 48-hour and 5-day follow-up, then it stops. Every substantive reply is a draft. It proposes, you approve.</p></div>
+    </div>
+    <div class="demo-art" aria-hidden="true">
+      <svg viewBox="0 0 520 150" role="img" aria-label="Chainring and speech bubble motif">
+        <g fill="none" stroke="#2e5e1e" stroke-width="3">
+          <circle cx="90" cy="75" r="46" stroke-dasharray="7 6"/>
+          <circle cx="90" cy="75" r="26"/>
+          <circle cx="90" cy="75" r="6" fill="#e8b13a" stroke="#e8b13a"/>
+        </g>
+        <g fill="none" stroke="#1e3d14" stroke-width="3" stroke-linecap="round">
+          <path d="M150 75 H205"/>
+          <path d="M196 66 l10 9 -10 9"/>
+        </g>
+        <g>
+          <rect x="225" y="34" width="270" height="82" rx="14" fill="#fffdf7" stroke="#ddd5c2" stroke-width="2"/>
+          <path d="M245 116 l0 18 l22 -18" fill="#fffdf7" stroke="#ddd5c2" stroke-width="2"/>
+          <text x="245" y="66" font-family="Georgia,serif" font-size="16" fill="#1a1f16">“Will this cassette fit my hub?”</text>
+          <text x="245" y="92" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#2e5e1e" font-weight="700">Checked against your catalogue first.</text>
+        </g>
+      </svg>
+    </div>
+    <p style="text-align:center;font-size:16.5px">The demo agent was put through a 10-case test suite designed to make it lie: a cross-brand compatibility trap, an out-of-stock size, a cracked-frame replacement demand, a discount ask, a “promise me Friday” service trap. <strong>It passed 10/10</strong>, inventing no price, stock level, delivery date, compatibility verdict, or warranty outcome. <a href="https://jaredfontaine2002.github.io/portfolio/">Portfolio &amp; live demo</a></p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="eyebrow">About</div>
+    <h2>Who does the work</h2>
+    <div class="about" style="margin-top:22px">
+      <div class="avatar" aria-hidden="true">JF</div>
+      <div class="about-text">
+        <p><strong>Jared Fontaine.</strong> Cycling-industry customer service is my trade: Planet Cyclery, Cambria Bike, and now Tune Cycles in Australia. I also spent time as a Curated.com cycling expert, where I sold $500K+ in bikes over two years. The data side is the other half of my trade: ticket analytics in Python, and a public Gorgias CX analytics project tracking first response, resolution, CSAT and SLA breaches.</p>
+        <p>I'm <strong>Gorgias Admin certified and Gorgias CX certified</strong> (both 2026), and Shimano Tech &amp; SRAM Technical University (Elite) certified. The sizing and compatibility side isn't guesswork either.</p>
+        <p>The Bike Shop CX Agent on my portfolio is the working demo of how I build: guardrail-first, approval-gated, and tested against the traps that make generic agents lie. <a href="https://jaredfontaine2002.github.io/portfolio/">Portfolio &amp; live demo</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Fit</div>
+    <h2>Is this for your shop?</h2>
+    <div class="guarantee">
+      <div class="card yes"><h3>✓ A fit if</h3>
+        <ul>
+          <li>You run an independent bike shop or a small DTC cycling brand selling on Shopify</li>
+          <li>You, or a small team, answer customer messages yourselves, evenings included</li>
+          <li>The same sizing, compatibility, order, service and warranty questions keep coming back</li>
+          <li>Your helpdesk is Gorgias. The full Audit and Sprint are Gorgias work; the Mini-Audit runs on an export from any helpdesk</li>
+        </ul>
+      </div>
+      <div class="card no"><h3>✕ Not a fit if</h3>
+        <ul>
+          <li>You want an agent replying to customers unsupervised. Every substantive reply here stays a draft for your approval</li>
+          <li>You want guaranteed hours saved, revenue or CSAT movement. I guarantee the work, not the outcomes</li>
+          <li>You're mid-migration to Gorgias. Start with the Mini-Audit and book the Audit after the move</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="offers">
+  <div class="wrap">
+    <div class="eyebrow">The offers</div>
+    <h2>Start with the picture. Add the fixing only if you want it.</h2>
+    <div class="ladder" aria-hidden="true">
+      <span class="rung">0 · Free Mini-Audit</span><span class="arrow">→</span>
+      <span class="rung">1 · Audit $595</span><span class="arrow">→</span>
+      <span class="rung">2 · Sprint $1,800</span><span class="arrow">→</span>
+      <span class="rung">3 · Care $700/mo</span>
+    </div>
+    <div class="cards">
+
+      <div class="card price-card">
+        <span class="tag start">First paid step</span>
+        <h3>Gorgias Helpdesk Audit</h3>
+        <div class="price">$595</div>
+        <div class="per">one-time · delivered in 7 days</div>
+        <ul>
+          <li>Full audit of your Gorgias: macros, routing rules, views, tags, SLA policies, AI agent configuration</li>
+          <li>Ticket analysis: first response, resolution and CSAT by tag, topic and agent, plus SLA breach patterns</li>
+          <li>Prioritised fix list: quick wins vs. structural fixes, ranked by impact</li>
+          <li>Recorded walkthrough of the findings + a live Q&amp;A call</li>
+          <li>The report is yours either way</li>
+        </ul>
+        <a class="btn primary" href="https://square.link/u/69Sae1mn">Start with the $595 Audit</a>
+        <p class="note">Secure checkout via Square.</p>
+      </div>
+
+      <div class="card price-card hot">
+        <span class="tag">Done-for-you · The build</span>
+        <h3>Optimization Sprint</h3>
+        <div class="price">$1,800</div>
+        <div class="per">one-time · 14 days</div>
+        <ul>
+          <li><strong>Your audit fixes, implemented:</strong></li>
+          <li>Macro library rebuilt around your actual ticket mix</li>
+          <li>Routing rules and views fixed, so tickets land with the right person first time</li>
+          <li>Tag taxonomy cleaned up, so your reporting means something</li>
+          <li>SLA policies configured, with breach alerts</li>
+          <li>AI agent configured on your catalogue, orders and policies, test-run and QA'd before it goes near a customer</li>
+          <li>Before/after report: baselines vs. 30 days post-sprint</li>
+        </ul>
+        <a class="btn primary" href="https://square.link/u/Dhu8X8c2">Start the $1,800 Sprint</a>
+        <p class="note">Secure checkout via Square. It needs a completed audit to work from: mine, or an equivalent teardown.</p>
+      </div>
+
+      <div class="card price-card">
+        <h3 style="margin-top:6px">CX Care</h3>
+        <div class="price">$700<span style="font-size:19px">/mo</span></div>
+        <div class="per">monthly · dashboard, one implemented fix, review call</div>
+        <ul>
+          <li>Live CX dashboard: first response, resolution, CSAT, SLA breaches, tag trends</li>
+          <li>One optimization sprint every month, the highest-impact fix from that month's data, implemented</li>
+          <li>A 30-minute monthly review call: what moved, what didn't, what's next</li>
+        </ul>
+        <a class="btn primary" href="https://square.link/u/zRPJGIEW">Start CX Care at $700/mo</a>
+        <p class="note strong">3-month minimum to start. Month one sets your baseline. Month-to-month after that, cancel anytime.</p>
+        <p class="note">Secure checkout via Square. At checkout, choose <strong>Subscription — Monthly</strong>, not the one-time option.</p>
+      </div>
+
+    </div>
+    <div class="cta-row" style="justify-content:center;margin-top:26px"><a class="btn primary" href="#free">Get my free Helpdesk Mini-Audit</a></div>
+    <p class="micro" style="margin-top:14px;text-align:center">Not ready for the full audit? The <a href="https://jared-fontaine.kit.com/free-helpdesk-mini-audit-bike-shops">free Helpdesk Mini-Audit</a> is the sample version. First 5 shops, back within 3 business days.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Guardrails, honestly</div>
+    <h2>What the agent will never do</h2>
+    <div class="guarantee">
+      <div class="card yes"><h3>✓ Always</h3>
+        <ul>
+          <li>It proposes, you approve. Every substantive reply is a draft for your staff</li>
+          <li>It only quotes your facts: price, stock, compatibility, turnaround, all from your catalogue, orders and policies</li>
+          <li>It's honest about being AI if a customer asks</li>
+          <li>Every number in the flag report traces to a ticket</li>
+        </ul>
+      </div>
+      <div class="card no"><h3>✕ Never: draft-only, forever</h3>
+        <ul>
+          <li>Refunds, discounts, price matches, custom quotes</li>
+          <li>Order changes and cancellations</li>
+          <li>Warranty outcomes and delivery promises</li>
+          <li>Asking for card numbers, passwords, or ID</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:20px;font-size:16px;color:#39412f">What I guarantee is the work: the read, the fix list, the configuration, delivered on the timeline stated. I don't guarantee outcomes like hours saved or revenue, because those depend on your queue. You get the numbers your own tickets produce, reported straight.</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2>Straight answers</h2>
+    <div style="margin-top:20px">
+      <details><summary>What exactly is free in the Mini-Audit, and what isn't?</summary>
+        <p>You send an export of a sample of anonymised tickets. Within 3 business days you get your top repeated question types with counts, up to 3 macros that don't match real tickets, your slowest ticket lane, and one sizing/compatibility risk flag, plus a note on the full audit's scope. It's a sample read. The full $595 Audit covers your entire Gorgias configuration and 3–6 months of ticket data, with the prioritised fix list and a walkthrough. First 5 shops get the Mini-Audit free.</p></details>
+      <details><summary>Will the agent auto-send, refund, discount, or promise things?</summary>
+        <p>No. Refunds, discounts, order changes, cancellations, warranty outcomes, delivery promises, price matches and custom quotes are draft-only, forever. That's the guardrail system the demo was tested on. It passed 10/10 trap cases with no invented price, stock, date, compatibility verdict, or warranty outcome.</p></details>
+      <details><summary>We're not on Gorgias. Is this still for us?</summary>
+        <p>Yes. The front-door agent can start from exported, anonymised tickets plus your catalogue and orders; a Gorgias migration can be a later step, not a blocker. The full Audit itself is a Gorgias teardown, so if you're mid-migration, start with the free Mini-Audit and we'll time the Audit for after the move.</p></details>
+      <details><summary>Do you need access to our live customer data to start?</summary>
+        <p>No. The Mini-Audit and the demo work start on exported, anonymised tickets only. No live helpdesk or personal data without your explicit approval. The full Audit uses admin or agency access (or a screenshare walkthrough, if you prefer) only once you've booked it.</p></details>
+      <details><summary>Can't I just look at my own Gorgias?</summary>
+        <p>You can. The Audit is for shops where nobody has the hours to do it properly: I pull 3–6 months of tickets, break first response, resolution and CSAT down by tag, topic and agent in Python, and rank the fixes by impact. You get a recorded walkthrough, and the report is yours either way. You're paying for the analysis done and prioritised, not for access you don't already have.</p></details>
+      <details><summary>Why start with a $595 audit instead of just building the agent?</summary>
+        <p>Because the audit shows where your queue is actually leaking time and money (macros, routing, views, tags, SLA and AI settings), so the $1,800 Sprint configures the agent on a fix list that matters, in 14 days, instead of automating a broken setup. The audit report is yours either way.</p></details>
+      <details><summary>Is CX Care a contract?</summary>
+        <p>It's $700 a month with a 3-month minimum to start. Month one sets your baseline, and real movement shows across the next two cycles. After that it's month-to-month and you can cancel anytime.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section dark final">
+  <div class="wrap">
+    <div class="eyebrow">Free Mini-Audit · First 5 shops free</div>
+    <h2>Your customers are asking answerable questions right now.</h2>
+    <p class="lede" style="margin:14px auto 0;text-align:center;max-width:640px">Every one of those questions is answerable from your own catalogue, orders and policies. Start with the free sample read, or go straight to the full $595 Audit: delivered in 7 days, report and walkthrough yours either way.</p>
+    <div class="cta-row">
+      <a class="btn gold" href="https://jared-fontaine.kit.com/free-helpdesk-mini-audit-bike-shops">Get my free Helpdesk Mini-Audit</a>
+      <a class="btn ghost" href="https://square.link/u/69Sae1mn">Start with the $595 Audit</a>
+    </div>
+    <p class="contact">Questions before buying: Jared Fontaine · <a href="mailto:jaredfontaine2002@gmail.com">jaredfontaine2002@gmail.com</a> · <a href="https://jaredfontaine2002.github.io/portfolio/">Portfolio &amp; live demo</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Gorgias Helpdesk Audit for Bike Shops · Jared Fontaine · Free Mini-Audit → Audit $595 → Sprint $1,800 → Care $700/mo · <a href="https://jaredfontaine2002.github.io/portfolio/">Portfolio &amp; live demo</a> · <a href="mailto:jaredfontaine2002@gmail.com">jaredfontaine2002@gmail.com</a>
+  </div>
+</footer>
+
+<div class="mobilebar" aria-hidden="false">
+  <a class="btn gold" href="https://jared-fontaine.kit.com/free-helpdesk-mini-audit-bike-shops">Get my free Helpdesk Mini-Audit</a>
+  <a class="btn primary" style="background:#fff;color:var(--green-dark)" href="https://square.link/u/69Sae1mn">$595 Audit</a>
+</div>
+
+</body>
+</html>
