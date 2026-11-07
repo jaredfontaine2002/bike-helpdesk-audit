@@ -107,6 +107,15 @@ details[open ] summary{color:var(--green)}
 /* demo svg panel */
 .demo-art{display:flex;justify-content:center;margin:var(--sp-6) 0 var(--sp-2)}
 .demo-art svg{max-width:520px;width:100%;height:auto}
+/* demo screenshot */
+.demo-shot{max-width:880px;margin:var(--sp-7) auto 0;text-align:center}
+.demo-shot img{width:100%;height:auto;display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+.demo-shot figcaption{font-size:14px;color:var(--muted);margin-top:var(--sp-3)}
+/* audit process diagram */
+.process-art{margin-top:var(--sp-6)}
+.process-art svg{width:100%;height:auto;display:block}
+.process-art .process-tall{display:none}
+@media (max-width:720px){.process-art .process-wide{display:none}.process-art .process-tall{display:block}}
 /* about */
 .about{display:flex;gap:var(--sp-7);align-items:flex-start;flex-wrap:wrap}
 .avatar{flex:0 0 92px;width:92px;height:92px;border-radius:var(--radius-round);background:var(--green);color:var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:32px;font-weight:700}
@@ -215,6 +224,67 @@ footer a{color:var(--green)}
         <a class="btn gold" href="https://jared-fontaine.kit.com/free-helpdesk-mini-audit-bike-shops">Get my free Helpdesk Mini-Audit</a>
       </div>
       <p class="micro">First 5 shops free · A sample read of the tickets you send, not the full 7-day audit · Your tickets are used only to write your report, and every number in it traces back to them</p>
+      <div class="process-art" role="img" aria-label="How the free Mini-Audit works, in three steps: you export tickets, I read and count them, you get the report — top repeated questions, mismatched macros and your slowest lane.">
+        <svg class="process-wide" viewBox="0 0 760 132" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="228" height="130" rx="16" style="fill:var(--card);stroke:var(--line)"/>
+          <circle cx="29" cy="31" r="13" style="fill:var(--green)"/>
+          <text x="29" y="37" text-anchor="middle" font-size="16" font-weight="800" style="font-family:var(--font-body);fill:var(--white)">1</text>
+          <text x="50" y="38" font-size="16" font-weight="700" style="font-family:var(--font-body);fill:var(--ink)">You export tickets</text>
+          <text x="17" y="70" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">A sample CSV from your</text>
+          <text x="17" y="92" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">helpdesk, names and</text>
+          <text x="17" y="114" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">emails stripped out</text>
+          <g fill="none" stroke-width="2.5" stroke-linecap="round" style="stroke:var(--on-dark)">
+            <path d="M236 66 H257"/>
+            <path d="M249 58 l9 8 -9 8"/>
+          </g>
+          <rect x="266" y="1" width="228" height="130" rx="16" style="fill:var(--card);stroke:var(--line)"/>
+          <circle cx="294" cy="31" r="13" style="fill:var(--green)"/>
+          <text x="294" y="37" text-anchor="middle" font-size="16" font-weight="800" style="font-family:var(--font-body);fill:var(--white)">2</text>
+          <text x="315" y="38" font-size="16" font-weight="700" style="font-family:var(--font-body);fill:var(--ink)">I read &amp; count</text>
+          <text x="282" y="70" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">Repeated questions</text>
+          <text x="282" y="92" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">counted, slowest lane</text>
+          <text x="282" y="114" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">timed</text>
+          <g fill="none" stroke-width="2.5" stroke-linecap="round" style="stroke:var(--on-dark)">
+            <path d="M501 66 H522"/>
+            <path d="M514 58 l9 8 -9 8"/>
+          </g>
+          <rect x="531" y="1" width="228" height="130" rx="16" style="fill:var(--card);stroke:var(--line)"/>
+          <circle cx="559" cy="31" r="13" style="fill:var(--green)"/>
+          <text x="559" y="37" text-anchor="middle" font-size="16" font-weight="800" style="font-family:var(--font-body);fill:var(--white)">3</text>
+          <text x="580" y="38" font-size="16" font-weight="700" style="font-family:var(--font-body);fill:var(--ink)">You get the report</text>
+          <text x="547" y="70" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">Mismatched macros</text>
+          <text x="547" y="92" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">flagged, one risk flag,</text>
+          <text x="547" y="114" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">within 3 business days</text>
+        </svg>
+        <svg class="process-tall" viewBox="0 0 340 408" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="338" height="118" rx="16" style="fill:var(--card);stroke:var(--line)"/>
+          <circle cx="29" cy="31" r="13" style="fill:var(--green)"/>
+          <text x="29" y="37" text-anchor="middle" font-size="16" font-weight="800" style="font-family:var(--font-body);fill:var(--white)">1</text>
+          <text x="50" y="38" font-size="16" font-weight="700" style="font-family:var(--font-body);fill:var(--ink)">You export tickets</text>
+          <text x="17" y="70" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">A sample CSV from your helpdesk,</text>
+          <text x="17" y="92" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">names and emails stripped out</text>
+          <g fill="none" stroke-width="2.5" stroke-linecap="round" style="stroke:var(--on-dark)">
+            <path d="M170 124 V143"/>
+            <path d="M162 135 l8 9 8 -9"/>
+          </g>
+          <rect x="1" y="149" width="338" height="118" rx="16" style="fill:var(--card);stroke:var(--line)"/>
+          <circle cx="29" cy="180" r="13" style="fill:var(--green)"/>
+          <text x="29" y="186" text-anchor="middle" font-size="16" font-weight="800" style="font-family:var(--font-body);fill:var(--white)">2</text>
+          <text x="50" y="187" font-size="16" font-weight="700" style="font-family:var(--font-body);fill:var(--ink)">I read &amp; count</text>
+          <text x="17" y="219" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">Repeated questions counted,</text>
+          <text x="17" y="241" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">slowest lane timed</text>
+          <g fill="none" stroke-width="2.5" stroke-linecap="round" style="stroke:var(--on-dark)">
+            <path d="M170 272 V291"/>
+            <path d="M162 283 l8 9 8 -9"/>
+          </g>
+          <rect x="1" y="297" width="338" height="118" rx="16" style="fill:var(--card);stroke:var(--line)"/>
+          <circle cx="29" cy="328" r="13" style="fill:var(--green)"/>
+          <text x="29" y="334" text-anchor="middle" font-size="16" font-weight="800" style="font-family:var(--font-body);fill:var(--white)">3</text>
+          <text x="50" y="335" font-size="16" font-weight="700" style="font-family:var(--font-body);fill:var(--ink)">You get the report</text>
+          <text x="17" y="367" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">Mismatched macros flagged, one</text>
+          <text x="17" y="389" font-size="14" style="font-family:var(--font-body);fill:var(--muted)">risk flag, within 3 business days</text>
+        </svg>
+      </div>
       <div class="steps" style="margin-top:var(--sp-6)">
         <div class="card"><span class="step-num">1</span><h3>You export a sample</h3><p>A CSV of recent tickets from your helpdesk, names and emails stripped out. A few hundred tickets across your normal mix shows the patterns best.</p></div>
         <div class="card"><span class="step-num">2</span><h3>I read the sample</h3><p>Every finding traces to the tickets you sent.</p></div>
@@ -269,6 +339,10 @@ footer a{color:var(--green)}
       </svg>
     </div>
     <p style="text-align:center;font-size:16px">The demo agent was put through a 10-case test suite designed to make it lie: a cross-brand compatibility trap, an out-of-stock size, a cracked-frame replacement demand, a discount ask, a “promise me Friday” service trap. <strong>It passed 10/10</strong>, inventing no price, stock level, delivery date, compatibility verdict, or warranty outcome. <a href="https://jaredfontaine2002.github.io/portfolio/">Portfolio &amp; live demo</a></p>
+    <figure class="demo-shot">
+      <img src="demo-screenshot.png" width="1784" height="304" loading="lazy" alt="Screenshot of the live Bike Shop CX Agent demo: a visitor asks “Will a 10-speed chain work on my 11-speed cassette?” and the agent refuses to guess a compatibility verdict, drafting the question for the shop team instead.">
+      <figcaption>The live demo, asked a trap question. It won’t guess a compatibility verdict — it drafts it for the team instead. Demo Cycles is a fictional shop. <a href="https://cdn.botpress.cloud/webchat/v3.7/shareable.html?configUrl=https://files.bpcontent.cloud/2026/10/22/15/20261022155825-43C70MZ8.json">Try the live demo</a></figcaption>
+    </figure>
   </div>
 </section>
 
