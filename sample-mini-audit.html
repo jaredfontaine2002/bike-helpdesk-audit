@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAMPLE — Helpdesk Mini-Audit | Gorgias Audit for Bike Shops</title>
+<meta name="description" content="A clearly labelled demonstration Mini-Audit built on synthetic ticket data for a fictional bike shop. Not a client deliverable.">
+<meta name="robots" content="noindex">
+<style>
+:root{--ink:#1a1f16;--muted:#5c6650;--paper:#f7f4ec;--card:#fffdf7;--line:#ddd5c2;--green:#2e5e1e;--green-dark:#1e3d14;--gold:#e8b13a;--gold-ink:#1a1f16;--radius:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:17px}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:Georgia,'Times New Roman',serif;line-height:1.15}
+h2{font-size:30px;margin-bottom:12px}
+.section{padding:48px 0}
+.sample-banner{background:#b3261e;color:#fff;font-weight:800;text-align:center;padding:14px 16px;font-size:17px;letter-spacing:.4px}
+.sample-tag{display:inline-block;background:#b3261e;color:#fff;font-size:12.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;border-radius:999px;padding:5px 12px;margin-bottom:14px}
+.eyebrow{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:14px}
+.lede{font-size:19px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-top:18px}
+.card p{font-size:16px;color:#39412f;margin-top:8px}
+.bar-row{display:flex;align-items:center;gap:12px;margin:8px 0;font-size:15.5px}
+.bar-row .lbl{flex:0 0 190px}
+.bar{flex:1;background:#eee7d2;border-radius:6px;height:16px}
+.bar i{display:block;height:100%;background:var(--green);border-radius:6px}
+.bar i.warn{background:#b3261e}
+.count{flex:0 0 86px;font-weight:700}
+pre{background:#1e3d14;color:#f3f1e6;border-radius:12px;padding:18px;font-size:14.5px;line-height:1.55;white-space:pre-wrap;margin-top:12px}
+.btn{display:inline-block;font-weight:700;font-size:16px;text-decoration:none;padding:14px 26px;border-radius:10px;text-align:center;background:var(--green);color:#fff}
+.btn.gold{background:var(--gold);color:var(--gold-ink)}
+.micro{font-size:13.5px;color:var(--muted);margin-top:12px}
+ol,ul{margin:10px 0 0 22px;font-size:16px;color:#39412f}
+li{margin:6px 0}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:14px;color:var(--muted)}
+footer a{color:var(--green)}
+</style>
+</head>
+<body>
+<div class="sample-banner">SAMPLE / DEMONSTRATION — fictional bike shop, synthetic ticket data. This is not a client deliverable and no shop paid for or received this document.</div>
+<main>
+<section class="section">
+  <div class="wrap">
+    <span class="sample-tag">Sample deliverable</span>
+    <h1>What a free Helpdesk Mini-Audit actually looks like</h1>
+    <p class="lede" style="margin-top:14px">This is the real format of the free Mini-Audit, built end to end on a fictional shop — “Demo Cycles” — and a synthetic set of 412 invented tickets. The method, layout and wording are what a real shop receives. The shop, the tickets and the numbers are not real, and nothing here is a testimonial or a client result.</p>
+    <p class="micro">Synthetic demonstration data created for this sample, November 2026. In a real Mini-Audit every number traces back to the tickets the shop sent.</p>
+    <p style="margin-top:18px"><a class="btn gold" href="https://jared-fontaine.kit.com/free-helpdesk-mini-audit-bike-shops">Get my free Helpdesk Mini-Audit</a> &nbsp;<a href="index.html">← Back to the Gorgias Audit page</a></p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Finding 1 — Ticket themes</div>
+    <h2>Where the sample queue's time goes</h2>
+    <div class="card">
+      <div class="bar-row"><span class="lbl">Bike sizing</span><div class="bar"><i style="width:100%"></i></div><span class="count">128 · 31%</span></div>
+      <div class="bar-row"><span class="lbl">Compatibility</span><div class="bar"><i style="width:77%"></i></div><span class="count">99 · 24%</span></div>
+      <div class="bar-row"><span class="lbl">Order status</span><div class="bar"><i style="width:61%"></i></div><span class="count">78 · 19%</span></div>
+      <div class="bar-row"><span class="lbl">Workshop timing</span><div class="bar"><i style="width:41%"></i></div><span class="count">52 · 13%</span></div>
+      <div class="bar-row"><span class="lbl">Warranty</span><div class="bar"><i class="warn" style="width:30%"></i></div><span class="count">38 · 9%</span></div>
+      <div class="bar-row"><span class="lbl">Everything else</span><div class="bar"><i style="width:13%"></i></div><span class="count">17 · 4%</span></div>
+      <p><strong>Reading:</strong> in this synthetic set, sizing and compatibility together are 55% of the queue — and they are the two categories where a confident wrong answer costs a return. Order status is the largest purely mechanical load: answerable from order data, no mechanic required.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Finding 2 — One macro that does not fit</div>
+    <h2>The macro, the failure, and the fix</h2>
+    <div class="card">
+      <p><strong>Existing macro (invented for this sample) — “Cassette swap — yes it fits”:</strong></p>
+      <pre>“Yes — an 11-speed cassette will work on your bike. Go ahead and order, and let us know if you need anything else.”</pre>
+      <p><strong>Why it fails:</strong> it answers before it knows. An 11-speed cassette needs the right freehub driver body; on a wheel built for 8/9/10-speed Shimano HG, it does not fit without a wheel or driver change. In the synthetic set, 14 tickets used this macro; 5 came back as returns or follow-up complaints. A macro that sounds helpful and is sometimes wrong is worse than no macro.</p>
+      <p><strong>Revised macro — asks first, escalates on condition:</strong></p>
+      <pre>“Before I confirm: which wheel and hub is the cassette going on, and do you know the driver body (for example Shimano HG, Micro Spline, or SRAM XD)? If you can add a photo of the driver, I can confirm the same day.
+Escalation: if the driver body is unknown, or the wheel is not one we stock, do not confirm compatibility — draft the reply for a mechanic to check against the catalogue first.”</pre>
+      <p>The revised version is a draft the agent or a staff member sends only after the facts exist. Compatibility verdicts stay draft-only until a human checks them — that rule does not change with automation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Finding 3 — One routing issue</div>
+    <h2>Warranty tickets sitting in the general queue</h2>
+    <div class="card">
+      <p>In the synthetic set, warranty tickets waited a median of 31 hours for a first reply (invented figure, shown to demonstrate the format) against 4 hours for order status. The cause in this sample: the routing rule only fires on the exact phrase “warranty claim”. Customers write “my frame cracked”, “it snapped”, “broken after two rides” — none of which match, so the tickets land in the general inbox behind sizing questions. The fix is a wider intent rule plus a triage macro that collects serial number, proof of purchase and photos in one pass, so the first human touch is a decision, not a request for attachments.</p>
+    </div>
+
+    <div class="card">
+      <h3>Prioritised recommendation</h3>
+      <ol>
+        <li><strong>Fix the compatibility macro first</strong> (above). It is the only finding in this sample that can actively cost the shop money on a single ticket.</li>
+        <li><strong>Widen the warranty routing rule</strong> and install the one-pass evidence macro. Cheapest change in the list; removes the slowest lane's main cause.</li>
+        <li><strong>Deflect order status with order data</strong> — 19% of this sample queue is answerable without a human once the reply pulls live order status.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>One thing this Mini-Audit would NOT do yet</h3>
+      <p>It would not automate warranty replies. Warranty outcomes are draft-only, forever — no setup built from this audit sends, refunds or promises a warranty result without a human approving it. Automating the evidence collection is safe; automating the decision is not, and the sample does not recommend it.</p>
+    </div>
+
+    <p class="micro" style="margin-top:22px">Everything on this page is a demonstration. Demo Cycles is a fictional shop; the 412 tickets, the macro, the counts and the timings were invented to show the format. A real Mini-Audit is a sample read of the tickets a shop sends — less comprehensive than the full $595 Audit, which covers the whole Gorgias configuration under access. No outcome — hours saved, revenue, CSAT — is promised by either document.</p>
+    <p style="margin-top:18px"><a class="btn" href="https://square.link/u/69Sae1mn">Start with the $595 Audit</a> &nbsp;<a class="btn gold" href="https://jared-fontaine.kit.com/free-helpdesk-mini-audit-bike-shops">Get the free Mini-Audit</a></p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">Gorgias Helpdesk Audit for Bike Shops · Jared Fontaine · This page is a labelled sample built on synthetic data · <a href="index.html">Audit page home</a> · <a href="mailto:jaredfontaine2002@gmail.com">jaredfontaine2002@gmail.com</a></div>
+</footer>
+</body>
+</html>
